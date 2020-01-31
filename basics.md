@@ -36,3 +36,34 @@ Command options have a short version, and long version. Short begins with -, lon
 - `file:` gives information about file type
 - `man`: manual page of a given command
   - pressing q to exit from manual page
+- `head` and `tail`: prints first and last lines
+
+#### Permissions
+What can be done with a file?
+- **r**: read the file
+- **w**: write the file
+- **x**: execute the file if it is a program or a script
+
+3 type of people:
+- **owner**: person who ownes the file
+- **group**: every file belongs to a single group
+- **others**: everyone else who is not in the group or owner
+
+How to modify permissions?<br/>
+`chmod [type_of_peope][grant_or_revoke][rwx]`:
+- type_of_people:
+  - **u** for owner
+  - **g** for group
+  - **o** for others
+- grant_or_revoke:
+  - **+** for granting
+  - **-** for revoking
+
+An example looks like this:
+`chmod go-x /user/cloudera/frog.png`<br/>
+*Another way to modify permissions is using binary bits notation.*
+
+#### Data Streams
+- STDIN (0) - Standard input
+- STDOUT (1) - Standard output, defaults to terminal
+- STDERR (2) - Standard error, defaults to terminal
