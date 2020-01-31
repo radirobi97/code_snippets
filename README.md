@@ -1,2 +1,2 @@
-# code_snippets
-Useful code snippets - programming languages by branches
+# commands
+This branch contain bash related commands
