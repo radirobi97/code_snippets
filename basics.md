@@ -20,7 +20,7 @@ Every path which begins with **/** is an absolute path. **/** means the root dir
 
 
 
-#### Commands
+### Commands
 Command options have a short version, and long version. Short begins with -, long version with --. Short options can be appended after eachother.
 - `pwd:` where I am
 - `ls: ` lists contents of a directory (except hidden files, these begins with **.**)
@@ -39,7 +39,7 @@ Command options have a short version, and long version. Short begins with -, lon
 - `head` and `tail`: prints first and last lines
 - `less`: a convinient way to scroll through a file
 
-#### Permissions
+### Permissions
 What can be done with a file?
 - **r**: read the file
 - **w**: write the file
@@ -64,17 +64,17 @@ An example looks like this:
 `chmod go-x /user/cloudera/frog.png`<br/>
 *Another way to modify permissions is using binary bits notation.*
 
-#### Data Streams
+### Data Streams
 - STDIN (0) - Standard input
 - STDOUT (1) - Standard output, defaults to terminal
 - STDERR (2) - Standard error, defaults to terminal
 
-###### Operators:
+##### Operators:
 - overwriting the content: **>**
 - appending: **>>**
 - piping: **|**
 
-#### Processes/Tasks
+### Processes/Tasks
 `top` is the command which lists processes out in real time. Result looks like this:
 ```Bash
 Tasks: 174 total, 3 running, 171 sleeping, 0 stopped
@@ -99,4 +99,4 @@ Linux has several virtual consoles. We can switch between consoles by pressing *
 **Background processes** <br/>
 `jobs` lists out background processes. To put a process in the background type `sleep 5 &`, use the **&** smybol.
 
-A running process in the foreground can be put in the background as stopped by pressing **ctrl+z**. A background stopped process can be taken in the foreground with `fg PID_num`. 
+A running process in the foreground can be put in the background as stopped by pressing **ctrl+z**. A background stopped process can be taken in the foreground with `fg PID_num`.
