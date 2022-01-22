@@ -105,3 +105,7 @@ A running process in the foreground can be put in the background as stopped by p
 ### Tar
 Without the --transform flag the archived file would contain a directory called **cbx**. Using the --transform flag it is possible to rename **cbx** to **x** using a SED expression.
 `tar -zcvf ${WORKSPACE}/x.tar.gz -C ${WORKSPACE}/cb-x/codebeamer-frontend/dist cbx --transform s/cbx/x/`
+
+### dd
+Testing DISK performance
+`dd if=/dev/zero of=/home/appuser/codebeamer/tomcat/webapps/cb/config/logo/testfile bs=1G count=1 oflag=direct`
