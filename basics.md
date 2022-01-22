@@ -100,3 +100,8 @@ Linux has several virtual consoles. We can switch between consoles by pressing *
 `jobs` lists out background processes. To put a process in the background type `sleep 5 &`, use the **&** smybol.
 
 A running process in the foreground can be put in the background as stopped by pressing **ctrl+z**. A background stopped process can be taken in the foreground with `fg PID_num`.
+
+
+### Tar
+Without the --transform flag the archived file would contain a directory called **cbx**. Using the --transform flag it is possible to rename **cbx** to **x** using a SED expression.
+`tar -zcvf ${WORKSPACE}/x.tar.gz -C ${WORKSPACE}/cb-x/codebeamer-frontend/dist cbx --transform s/cbx/x/`
